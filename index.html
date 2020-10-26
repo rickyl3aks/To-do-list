@@ -4,29 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>toDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>to do List</title>
   </head>
   <body>
     <div class="container">
-      <div class="the-header" id="header">
-        <h1>My APP</h1>
-
-        <input
-          type="text"
-          id="the-input"
-          placeholder="What you want to do..."
-        />
-        <span onclick="createNewElement()" class="create-button"
-          >Create toDo</span
-        >
+      <div class="card">
+        <div class="title">
+          <h1>To do List</h1>
+        </div>
+        <input id="input" type="text" placeholder="What you need to do?" />
+        <button id="btn">Enter</button>
+        <div class="container-list">
+          <ul id="ul">
+            <li>
+              hello<i class="fa fa-trash" aria-hidden="true"></i
+              ><i class="fa fa-check" aria-hidden="true"></i>
+            </li>
+            <li>hello</li>
+          </ul>
+        </div>
       </div>
-      <ul id="the-ul">
-        <li>Buy a car</li>
-        <li>Study hard</li>
-        <li>Get groceries</li>
-        <li>Get bread</li>
-        <li>Get eggs</li>
-      </ul>
     </div>
     <script src="main.js"></script>
   </body>

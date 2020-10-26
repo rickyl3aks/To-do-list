@@ -1,78 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul li {
-  position: relative;
-  background: #a09e9e;
-  list-style: none;
-  cursor: pointer;
-  padding: 10px 6px 10px 40px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+body {
+  font-family: "Quicksand", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ul li:hover {
-  background: #ddd;
-}
-
-ul li.checked:before {
-  content: "";
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 15px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 10px;
-}
-
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 10px 15px;
-}
-
-.close:hover {
-  background: #f43cff;
-}
-
-.the-header {
-  background: #f43c2f;
-  padding: 30px 42px;
-  color: #fff;
+.container {
+  width: 50%;
   text-align: center;
+  background-color: #d88e89;
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 30px;
+  padding: 1rem 5rem;
+  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.3);
 }
 
-.the-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#the-input {
-  width: 80%;
-  padding: 15px;
-  float: left;
-  font-size: 15px;
+.container input {
+  padding: 0.5rem;
+  border-radius: 5px;
   border: none;
-  border-radius: 8px;
-  outline: none;
 }
 
-.create-button {
-  padding: 10px;
-  font-size: 15px;
-  width: 30%;
-  color: #fff;
-  float: center;
-  text-align: center;
+.container h1 {
+  margin: 1.5rem;
+}
+
+.container button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
-  background: rgb(120, 120, 209);
+}
+
+.container button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.container-list ul {
+  list-style: none;
+  font-weight: bold;
+  text-align: left;
+}
+
+.container-list li {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.container i {
+  float: right;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.fa-check:hover {
+  color: green;
+}
+
+.fa-trash:hover {
+  color: tomato;
+}
+
+.line-through {
+  text-decoration: line-through;
 }
