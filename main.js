@@ -32,7 +32,10 @@ function deleteCheck(e) {
   const item = e.target;
   if (item.classList.contains("trash")) {
     const remove = item.parentElement;
-    remove.remove();
+    remove.classList.add("fall");
+    remove.addEventListener("transitionend", () => {
+      remove.remove();
+    });
   }
   if (item.classList.contains("checked")) {
     const checked = item.parentElement;

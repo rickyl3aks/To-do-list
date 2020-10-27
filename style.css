@@ -28,7 +28,9 @@ body {
 .container input {
   padding: 0.5rem;
   border-radius: 5px;
+  font-size: 1.5rem;
   border: none;
+  width: 70%;
 }
 
 .container h1 {
@@ -38,7 +40,9 @@ body {
 .container button {
   padding: 0.5rem;
   border-radius: 5px;
+  font-size: 1.5rem;
   border: none;
+  background-color: #fff;
   cursor: pointer;
 }
 
@@ -70,6 +74,7 @@ body {
   justify-content: flex-start;
   text-align: left;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .todo li {
@@ -92,11 +97,21 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.fall {
+  transform: translateY(10rem) rotateZ(35deg);
+  opacity: 0;
+}
+
 /*device screen*/
 
 @media only screen and (max-width: 400px) {
   .container {
     padding: 0;
     margin: auto 1rem;
+  }
+
+  .todo {
+    font-size: 1rem;
+    padding: 0;
   }
 }
