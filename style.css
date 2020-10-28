@@ -28,9 +28,8 @@ body {
 .container input {
   padding: 0.5rem;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: none;
-  width: 70%;
 }
 
 .container h1 {
@@ -40,7 +39,7 @@ body {
 .container button {
   padding: 0.5rem;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: none;
   background-color: #fff;
   cursor: pointer;
